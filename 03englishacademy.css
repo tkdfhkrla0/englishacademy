@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* montserrat raleway roboto 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/* Noto Sans KR 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap");
+/* 모든폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hind+Siliguri:wght@300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Monoton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Lato 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Playfair 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Open Sans 폰트*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* 눈누 폰트 지마켓 */
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Default CSS */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F5F6F7;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container header .banner-outer {
+  position: relative;
+  background: linear-gradient(to right, #00202B 50%, #fff 50%);
+}
+.container header .banner-outer .banner {
+  width: 1450px;
+  margin: auto;
+}
+.container header .banner-outer .banner .close-banner {
+  position: absolute;
+  right: 15px;
+  top: 2px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.container header .banner-outer .banner img {
+  display: block;
+}
+.container header .lnb-outer {
+  background-color: #E2EDF8;
+}
+.container header .lnb-outer .lnb {
+  overflow: hidden;
+  width: 1450px;
+  margin: auto;
+}
+.container header .lnb-outer .lnb .logo {
+  float: left;
+  padding: 10px 0;
+}
+.container header .lnb-outer .lnb .lnb-navi {
+  float: right;
+  line-height: 110px;
+}
+.container header .lnb-outer .lnb .lnb-navi a {
+  font-family: "Raleway";
+}
+.container header .lnb-outer .lnb .lnb-navi a::after {
+  content: "|";
+  font-size: 12px;
+  margin: 0 8px;
+  color: #777;
+  box-sizing: border-box;
+}
+.container header .lnb-outer .lnb .lnb-navi a:last-child::after {
+  display: none;
+}
+.container header .lnb-outer .lnb .lnb-navi a:hover {
+  color: dodgerblue;
+}
+.container header .gnb-outer {
+  background-color: #272C38;
+}
+.container header .gnb-outer nav {
+  width: 1450px;
+  margin: auto;
+  position: relative;
+}
+.container header .gnb-outer nav .gnb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.container header .gnb-outer nav .gnb li:first-child {
+  background-color: crimson;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child) {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.4431372549);
+  height: 50px;
+  flex: 1;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child) > a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child) a .badge {
+  font-style: normal;
+  background-color: crimson;
+  border-radius: 7px;
+  font-size: 13px;
+  padding: 0 5px;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child) .dropdown {
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child) .dropdown a {
+  display: block;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.container header .gnb-outer nav .gnb li:not(.gnb li:last-child):hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.container header .gnb-outer nav .gnb li:last-child {
+  height: 50px;
+  width: 50px;
+  background-color: #12359D;
+  position: relative;
+  transition: 0.35s;
+}
+.container header .gnb-outer nav .gnb li:last-child.active {
+  background-color: #fff;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger span {
+  transition: 0.35s;
+  position: absolute;
+  width: 100%;
+  border: 1px solid #fff;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger span:nth-child(1) {
+  top: 0;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger span:nth-child(2) {
+  top: 50%;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger span:nth-child(3) {
+  top: 100%;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger.active span {
+  border-color: #000;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.container header .gnb-outer nav .gnb li:last-child .trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.container header .gnb-outer nav .sitemap-outer {
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  width: inherit;
+  padding: 30px 15px;
+  display: none;
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap {
+  display: flex;
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap div {
+  flex: 1;
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap div b {
+  font-size: 14px;
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap div a {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap div a::before {
+  content: "- ";
+}
+.container header .gnb-outer nav .sitemap-outer .sitemap div a:hover {
+  text-decoration: underline;
+}
